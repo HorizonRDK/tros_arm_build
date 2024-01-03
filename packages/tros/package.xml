@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>tros</name>
+  <version>2.2.0</version>
+  <description>TogetheROS Bot</description>
+  <maintainer email="zhuo.wang@horizon.cc">zhuo</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>hobot-models-basic</depend>
+  <depend>base</depend>
+
+  <depend condition="$PLATFORM == X3">ai_msgs</depend>
+  <depend condition="$PLATFORM == X3">audio_control</depend>
+  <depend condition="$PLATFORM == X3">audio_msg</depend>
+  <depend condition="$PLATFORM == X3">audio_tracking</depend>
+  <depend condition="$PLATFORM == X3">body_tracking</depend>
+  <depend condition="$PLATFORM == X3">dnn_benchmark_example</depend>
+  <depend condition="$PLATFORM == X3">dnn_node</depend>
+  <depend condition="$PLATFORM == X3">dnn_node_example</depend>
+  <depend condition="$PLATFORM == X3">dnn_node_sample</depend>
+  <depend condition="$PLATFORM == X3">elevation_net</depend>
+  <depend condition="$PLATFORM == X3">gesture_control</depend>
+  <depend condition="$PLATFORM == X3">hand_gesture_detection</depend>
+  <depend condition="$PLATFORM == X3">hand_lmk_detection</depend>
+  <depend condition="$PLATFORM == X3">hbm_img_msgs</depend>
+  <depend condition="$PLATFORM == X3">hobot_app_xrrobot_body_tracking</depend>
+  <depend condition="$PLATFORM == X3">hobot_app_xrrobot_gesture_control</depend>
+  <depend condition="$PLATFORM == X3">hobot_audio</depend>
+  <depend condition="$PLATFORM == X3">hobot_chatbot</depend>
+  <depend condition="$PLATFORM == X3">hobot_codec</depend>
+  <depend condition="$PLATFORM == X3">hobot_cv</depend>
+  <depend condition="$PLATFORM == X3">hobot_falldown_detection</depend>
+  <depend condition="$PLATFORM == X3">hobot_hdmi</depend>
+  <depend condition="$PLATFORM == X3">hobot_image_publisher</depend>
+  <depend condition="$PLATFORM == X3">hobot_llm</depend>
+  <depend condition="$PLATFORM == X3">hobot_mot</depend>
+  <depend condition="$PLATFORM == X3">hobot_tts</depend>
+  <depend condition="$PLATFORM == X3">hobot_usb_cam</depend>
+  <depend condition="$PLATFORM == X3">hobot_vio</depend>
+  <depend condition="$PLATFORM == X3">hobot_visualization</depend>
+  <depend condition="$PLATFORM == X3">img_msgs</depend>
+  <depend condition="$PLATFORM == X3">imu_sensor</depend>
+  <depend condition="$PLATFORM == X3">line_follower_model</depend>
+  <depend condition="$PLATFORM == X3">line_follower_perception</depend>
+  <depend condition="$PLATFORM == X3">mipi_cam</depend>
+  <depend condition="$PLATFORM == X3">mono2d_body_detection</depend>
+  <depend condition="$PLATFORM == X3">mono2d_trash_detection</depend>
+  <depend condition="$PLATFORM == X3">mono3d_indoor_detection</depend>
+  <depend condition="$PLATFORM == X3">parking_perception</depend>
+  <depend condition="$PLATFORM == X3">parking_search</depend>
+  <depend condition="$PLATFORM == X3">recorder_node</depend>
+  <depend condition="$PLATFORM == X3">rgbd_sensor</depend>
+  <depend condition="$PLATFORM == X3">trigger_node</depend>
+  <depend condition="$PLATFORM == X3">trigger_node_example</depend>
+  <depend condition="$PLATFORM == X3">websocket</depend>
+  <depend condition="$PLATFORM == X3">xrrobot</depend>
+  <depend condition="$PLATFORM == X3">xrrobot_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

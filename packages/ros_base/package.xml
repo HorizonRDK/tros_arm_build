@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>base</name>
+  <version>2.2.0</version>
+  <description>TogetheROS ros base</description>
+  <maintainer email="zhuo.wang@horizon.cc">zhuo</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rmw_cyclonedds_cpp</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>rcl</depend>
+  <depend>rclcpp</depend>
+
+  <depend>ros_base</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
