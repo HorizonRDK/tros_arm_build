@@ -1,7 +1,7 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package ros_base
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package tros
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.2.0 (2023-12-21)
+2.2.0 (2023-12-22)
 ------------------
-* Pack tros ros base package
+* Pack tros package
