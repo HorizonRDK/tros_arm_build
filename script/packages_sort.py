@@ -29,7 +29,8 @@ def topological_sort_for_specific_packages(dependency_graph, known_packages):
     return result[::-1]
 
 
-def find_packages_sorted(src_path):
+def find_packages_sorted(src_path, ros_distro):
+    print("ros_distro:", ros_distro)
 
     pkgs_dict = find_packages(src_path)
 
@@ -43,7 +44,7 @@ def find_packages_sorted(src_path):
         # print(path)
         pkg.evaluate_conditions({
                 'ROS_VERSION': '2',
-                'ROS_DISTRO': 'foxy',
+                'ROS_DISTRO': ros_distro,
                 'ROS_PYTHON_VERSION': '3',
                 })
         depends = [

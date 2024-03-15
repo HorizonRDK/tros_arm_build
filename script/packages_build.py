@@ -7,10 +7,11 @@ import time
 
 from packages_sort import find_packages_sorted
 
+ROSDISTRO="humble"
+
 def process_bash_command(bash_command, time_out=None):
     process = subprocess.Popen(
         bash_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
     print(f"bash_command: {bash_command}")
     # 获取命令的标准输出和标准错误输出
     stdout, stderr = process.communicate(timeout=time_out)
@@ -26,23 +27,23 @@ def process_bash_command(bash_command, time_out=None):
     return return_code, stdout.decode(), stderr.decode() 
 
 def rosdep_update():
-    update_command = "rosdep update --rosdistro=foxy"
+    update_command = f"rosdep update --rosdistro={ROSDISTRO}"
     process_bash_command(update_command, 30)
 
 def rosdep_install(src_path):
-    install_command = f"rosdep install --from-paths {src_path} --ignore-src -y --rosdistro foxy"
+    install_command = f"rosdep install --from-paths {src_path} --ignore-src -y --rosdistro {ROSDISTRO}"
     process_bash_command(install_command)
 
 def bloom_generate():
-    generate_command = "bloom-generate rosdebian --ros-distro foxy"
-    process_bash_command(generate_command, 20)
+    generate_command = f"bloom-generate rosdebian --ros-distro {ROSDISTRO}"
+    process_bash_command(generate_command, 50)
 
 def bloom_build():
-    build_command = "fakeroot debian/rules binary"
+    build_command = f"fakeroot debian/rules binary"
     return process_bash_command(build_command)
 
 def set_token():
-    command = "echo $TOKEN"
+    command = f"echo $TOKEN"
     process_bash_command(command)
 
 def trosdep_add(package_name):
@@ -66,7 +67,7 @@ def main():
     if not os.path.exists(out_path):
         os.makedirs(out_path)
 
-    packages = find_packages_sorted(src_path)
+    packages = find_packages_sorted(src_path, ROSDISTRO)
     for package, path in packages.items():
         print(package, path)
         os.chdir(os.path.join(src_path, path))
