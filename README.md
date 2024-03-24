@@ -1,11 +1,13 @@
-TogetheROS.BOT ARM平台打包编译
+English| [简体中文](./README_cn.md)
 
-文件说明：
+TogetheROS.BOT ARM Platform Packaging Compilation
 
-tros.repos：需要下载的仓库列表
+File Description:
 
-docker：打包docker镜像文件
+tros.repos: List of repositories to be downloaded
 
-script：一个打包工具，可自动查找打包目录下包之间的相互依赖关系，然后根据依赖顺序进行打包
+docker: Packaging docker image files
 
-packages：tros和tros-base安装包
+script: A packaging tool that can automatically find the mutual dependency relationships between packages in the packaging directory, and then package them in order of dependencies
+
+packages: Installation packages for tros and tros-base

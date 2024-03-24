@@ -1,6 +1,8 @@
-打包工具，自动查找打包目录下包之间的相互依赖关系，然后根据依赖顺序进行打包。
+English| [简体中文](./README_cn.md)
 
-使用方法：
+Packaging tool that automatically detects interdependencies between packages in the packaging directory, and then packages them according to the dependency order.
+
+Usage:
 
 ```bash
 python3 packages_build.py <src_path>
