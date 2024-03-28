@@ -62,7 +62,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # add tros depend file
-RUN echo "yaml https://raw.githubusercontent.com/HorizonRDK/trosdep/develop/foxy/trosdep.yaml" > \
+RUN echo "yaml https://raw.githubusercontent.com/HorizonRDK/trosdep/develop/humble/trosdep.yaml" > \
     /etc/ros/rosdep/sources.list.d/20-tros.list
 
 ENV DEB_BUILD_OPTIONS nocheck

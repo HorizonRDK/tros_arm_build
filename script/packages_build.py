@@ -91,8 +91,8 @@ def main():
             package_deb = matches.group(2)
             print("Package Name:", package_name)
             print("Package Deb:", package_deb)
-            # local_install_command = f"dpkg -i {package_deb}"
-            # process_bash_command(local_install_command)
+            local_install_command = f"dpkg -i {package_deb}"
+            process_bash_command(local_install_command)
             match = re.match(r"\.\./(.+)_(\d+\.\d+\.\d+)-(\w+)\.(\d{8}\.\d{6})_(\w+)\.deb$", package_deb)
             date_time = ''
             if match:
