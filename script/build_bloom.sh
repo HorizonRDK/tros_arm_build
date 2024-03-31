@@ -34,5 +34,7 @@ rosdep update --rosdistro ${ROS_DISTRO}
 
 rosdep install --from-paths ./src --ignore-src -y --rosdistro ${ROS_DISTRO}
 
-python3 ./script/packages_build.py ./src
+python3 ./tros_arm_build/script/packages_build.py ./src
+
+python3 ./tros_arm_build/script/packages_build.py ./tros_arm_build/packages
 
