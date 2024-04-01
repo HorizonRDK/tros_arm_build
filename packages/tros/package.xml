@@ -26,8 +26,6 @@
   <depend condition="$PLATFORM == X3">hand_gesture_detection</depend>
   <depend condition="$PLATFORM == X3">hand_lmk_detection</depend>
   <depend condition="$PLATFORM == X3">hbm_img_msgs</depend>
-  <depend condition="$PLATFORM == X3">hobot_app_xrrobot_body_tracking</depend>
-  <depend condition="$PLATFORM == X3">hobot_app_xrrobot_gesture_control</depend>
   <depend condition="$PLATFORM == X3">hobot_audio</depend>
   <depend condition="$PLATFORM == X3">hobot_chatbot</depend>
   <depend condition="$PLATFORM == X3">hobot_codec</depend>
@@ -51,13 +49,8 @@
   <depend condition="$PLATFORM == X3">mono3d_indoor_detection</depend>
   <depend condition="$PLATFORM == X3">parking_perception</depend>
   <depend condition="$PLATFORM == X3">parking_search</depend>
-  <depend condition="$PLATFORM == X3">recorder_node</depend>
   <depend condition="$PLATFORM == X3">rgbd_sensor</depend>
-  <depend condition="$PLATFORM == X3">trigger_node</depend>
-  <depend condition="$PLATFORM == X3">trigger_node_example</depend>
   <depend condition="$PLATFORM == X3">websocket</depend>
-  <depend condition="$PLATFORM == X3">xrrobot</depend>
-  <depend condition="$PLATFORM == X3">xrrobot_msgs</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
