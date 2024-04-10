@@ -35,6 +35,7 @@
   <depend condition="$PLATFORM == X3">hobot_image_publisher</depend>
   <depend condition="$PLATFORM == X3">hobot_llm</depend>
   <depend condition="$PLATFORM == X3">hobot_mot</depend>
+  <depend condition="$PLATFORM == X3">hobot_shm</depend>
   <depend condition="$PLATFORM == X3">hobot_tts</depend>
   <depend condition="$PLATFORM == X3">hobot_usb_cam</depend>
   <depend condition="$PLATFORM == X3">hobot_vio</depend>
@@ -49,7 +50,10 @@
   <depend condition="$PLATFORM == X3">mono3d_indoor_detection</depend>
   <depend condition="$PLATFORM == X3">parking_perception</depend>
   <depend condition="$PLATFORM == X3">parking_search</depend>
+  <depend condition="$PLATFORM == X3">recorder_node</depend>
   <depend condition="$PLATFORM == X3">rgbd_sensor</depend>
+  <depend condition="$PLATFORM == X3">trigger_node</depend>
+  <depend condition="$PLATFORM == X3">trigger_node_example</depend>
   <depend condition="$PLATFORM == X3">websocket</depend>
 
   <export>
