@@ -50,10 +50,7 @@
   <depend condition="$PLATFORM == X3">mono3d_indoor_detection</depend>
   <depend condition="$PLATFORM == X3">parking_perception</depend>
   <depend condition="$PLATFORM == X3">parking_search</depend>
-  <depend condition="$PLATFORM == X3">recorder_node</depend>
   <depend condition="$PLATFORM == X3">rgbd_sensor</depend>
-  <depend condition="$PLATFORM == X3">trigger_node</depend>
-  <depend condition="$PLATFORM == X3">trigger_node_example</depend>
   <depend condition="$PLATFORM == X3">websocket</depend>
 
   <export>
